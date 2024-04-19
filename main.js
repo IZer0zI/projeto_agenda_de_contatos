@@ -1,10 +1,11 @@
 const form = document.getElementById('form-agenda');
 const nomeContato = [];
 const numeroContato = [];
+
 let linhas = '';
 
 form.addEventListener('submit', function(e) {
-    e.preventDefault()
+    e.preventDefault();
 
     adicionaLinha();
     atualizaTabela();
@@ -27,7 +28,6 @@ function adicionaLinha() {
         linha += `</tr>`;
 
         linhas += linha;
-        console.log(adicionaLinha)
     };
 
     inputNomeContato.value = '';
